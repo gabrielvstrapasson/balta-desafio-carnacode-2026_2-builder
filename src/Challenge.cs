@@ -1,3 +1,4 @@
+/*
 // DESAFIO: Gerador de Relatórios Complexos
 // PROBLEMA: Sistema precisa gerar diferentes tipos de relatórios (PDF, Excel, HTML)
 // com múltiplas configurações opcionais (cabeçalho, rodapé, gráficos, tabelas, filtros)
@@ -197,3 +198,4 @@ namespace DesignPatternChallenge
         }
     }
 }
+*/
