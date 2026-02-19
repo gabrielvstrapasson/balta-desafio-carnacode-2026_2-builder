@@ -14,8 +14,8 @@ public class SalesReport
 	public bool IncludeCharts { get; set; }
 	public string ChartType { get; set; }
 	public bool IncludeSummary { get; set; }
-	public List<string> Columns { get; set; }
-	public List<string> Filters { get; set; }
+	public List<string> Columns { get; set; } = new();
+	public List<string> Filters { get; set; } = new();
 	public string SortBy { get; set; }
 	public string GroupBy { get; set; }
 	public bool IncludeTotals { get; set; }

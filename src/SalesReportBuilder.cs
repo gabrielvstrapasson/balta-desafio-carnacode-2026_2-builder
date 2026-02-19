@@ -25,8 +25,11 @@ public class SalesReportBuilder : ISalesReportBuilder
 
     public void AddDate(string startDate, string endDate)
     {
-        _salesReport.StartDate = DateTime.Parse(startDate);
-        _salesReport.EndDate = DateTime.Parse(endDate);
+        if (DateTime.TryParse(startDate, out var start)) 
+            _salesReport.StartDate = start;
+
+        if (DateTime.TryParse(endDate, out var end))
+            _salesReport.EndDate = end;
     }
 
     public void AddFooter(bool includeFooter, string footerText)
