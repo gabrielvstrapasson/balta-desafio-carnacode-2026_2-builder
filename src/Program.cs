@@ -17,7 +17,7 @@ class Program
             new DateTime(2024, 1, 1),
             new DateTime(2024, 1, 31)
         );
-
+       
         salesReport1.Generate();
 
         var salesReport2 = director.BuildSalesReportExcel(
